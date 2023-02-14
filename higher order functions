@@ -1,0 +1,11 @@
+""" 1. Function - Fibonacci Sequence """
+# 1.1 Using conditional statement
+def fib(n):
+  pred, curr = 0, 1  # 0th and 1st Fibonacci numbers
+  k = 1              # curr is the kth Fibonacci number
+  while k < n:
+    pred, curr = curr, pred + curr
+    k = k + 1
+  return curr
+
+
